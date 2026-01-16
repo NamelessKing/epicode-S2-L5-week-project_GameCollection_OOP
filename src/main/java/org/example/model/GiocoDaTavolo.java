@@ -18,7 +18,7 @@ public class GiocoDaTavolo extends Gioco {
 
         super(id, titolo, annoPubblicazione, prezzo);
 
-        if (numeroGiocatori <= 0) {
+        if (numeroGiocatori < 2) {
             throw new ValidationException("Numero di giocatori non valido");
         }
 
@@ -39,7 +39,7 @@ public class GiocoDaTavolo extends Gioco {
     }
 
     public void setNumeroGiocatori(int numeroGiocatori) throws ValidationException {
-        if (numeroGiocatori <= 0) {
+        if (numeroGiocatori < 2) {
             throw new ValidationException("Numero di giocatori non valido");
         }
         this.numeroGiocatori = numeroGiocatori;
