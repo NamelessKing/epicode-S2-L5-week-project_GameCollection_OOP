@@ -4,7 +4,7 @@ import org.example.exceptions.ValidationException;
 
 public abstract class Gioco {
 
-    protected final String id;          
+    protected final String id;
     protected String titolo;
     protected int annoPubblicazione;
     protected double prezzo;
